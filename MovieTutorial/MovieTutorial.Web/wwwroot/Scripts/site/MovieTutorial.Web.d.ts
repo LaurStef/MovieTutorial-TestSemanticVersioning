@@ -1535,7 +1535,7 @@ declare namespace MovieTutorial.MovieDB {
         protected getDeletePermission(): string;
         protected getInsertPermission(): string;
         protected getUpdatePermission(): string;
-        protected form: GenreForm;
+        protected forms: GenreForm;
     }
 }
 declare namespace MovieTutorial.MovieDB {
