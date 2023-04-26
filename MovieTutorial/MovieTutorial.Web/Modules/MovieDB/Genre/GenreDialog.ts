@@ -12,7 +12,7 @@ namespace MovieTutorial.MovieDB {
         protected getInsertPermission() { return GenreRow.insertPermission; }
         protected getUpdatePermission() { return GenreRow.updatePermission; }
 
-        protected form = new GenreForm(this.idPrefix);
+        protected forms = new GenreForm(this.idPrefix);
 
     }
 }

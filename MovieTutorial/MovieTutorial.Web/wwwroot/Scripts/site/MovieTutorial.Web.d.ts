@@ -1535,7 +1535,7 @@ declare namespace MovieTutorial.MovieDB {
         protected getDeletePermission(): string;
         protected getInsertPermission(): string;
         protected getUpdatePermission(): string;
-        protected form: GenreForm;
+        protected forms: GenreForm;
     }
 }
 declare namespace MovieTutorial.MovieDB {
@@ -1578,6 +1578,13 @@ declare namespace MovieTutorial.MovieDB {
         constructor(container: JQuery);
         protected getQuickSearchFields(): Serenity.QuickSearchField[];
         protected getQuickFilters(): Serenity.QuickFilter<Serenity.Widget<any>, any>[];
+    }
+}
+declare namespace MovieTutorial.MovieDB {
+    class MovieCastEditor extends Serenity.Extensions.GridEditorBase<MovieCastRow> {
+        protected getColumnsKey(): string;
+        protected getLocalTextPrefix(): string;
+        constructor(container: JQuery);
     }
 }
 declare namespace MovieTutorial.MovieDB {
@@ -1625,13 +1632,6 @@ declare namespace MovieTutorial.MovieDB {
         protected getInsertPermission(): string;
         protected getLocalTextPrefix(): string;
         protected getService(): string;
-        constructor(container: JQuery);
-    }
-}
-declare namespace MovieTutorial.MovieDB {
-    class MovieCastEditor extends Serenity.Extensions.GridEditorBase<MovieCastRow> {
-        protected getColumnsKey(): string;
-        protected getLocalTextPrefix(): string;
         constructor(container: JQuery);
     }
 }
