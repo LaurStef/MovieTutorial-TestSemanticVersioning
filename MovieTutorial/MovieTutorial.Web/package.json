@@ -1,6 +1,6 @@
-﻿{
+{
   "name": "serene.aspnetcore",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "MovieTutorial ASP.NET Core",
   "main": "index.js",
   "repository": {
@@ -20,9 +20,11 @@
     "vue": "^2.5.2"
   },
   "devDependencies": {
+    "semantic-release": "^21.0.1"
   },
   "scripts": {
-    "less": "lessc ./wwwroot/Content/site/site.less ./wwwroot/content/site/site.css"
+    "less": "lessc ./wwwroot/Content/site/site.less ./wwwroot/content/site/site.css",
+    "semantic-release": "semantic-release"
   },
   "author": "",
   "license": "ISC"
